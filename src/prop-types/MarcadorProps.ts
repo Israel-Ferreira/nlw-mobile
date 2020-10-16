@@ -1,6 +1,7 @@
-import { LatLng } from "react-native-maps";
+import { LatLng, Point } from "react-native-maps";
 
 export default interface MarcadorProps {
     coordinates: LatLng
-    calloutText: string
+    children? : React.ReactNode 
+    anchor: Point
 }

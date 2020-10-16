@@ -2,5 +2,5 @@ import { Region } from "react-native-maps";
 
 export default interface MapaProps {
     region: Region
-    children?: JSX.Element
+    children?: React.ReactNode
 }
