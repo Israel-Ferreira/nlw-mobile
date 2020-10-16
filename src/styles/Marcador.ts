@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 
+
 const styles = StyleSheet.create({
     calloutContrainer: {
         width: 200,
@@ -12,6 +13,7 @@ const styles = StyleSheet.create({
 
     calloutText: {
         color: "#0089A5",
+        fontFamily: "Nunito_700Bold",
         fontSize: 14,
     }
 })

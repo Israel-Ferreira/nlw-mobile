@@ -1,6 +1,4 @@
 import React from 'react';
-import { Dimensions, StyleSheet, View } from 'react-native';
-
 
 import { useFonts } from 'expo-font'
 
@@ -12,12 +10,8 @@ import {
 
 
 
-import Footer from './src/components/Footer';
-import Mapa from './src/components/Mapa';
-import Marcador from './src/components/Marcador';
-
-import defaultLocation from './src/mock/DefaultLocation';
 import { AppLoading } from 'expo';
+import Routes from './src/Routes';
 
 
 
@@ -33,24 +27,9 @@ export default function App() {
         return <AppLoading />
     } else {
         return (
-            <View style={styles.container}>
-                <Mapa region={defaultLocation}>
-                    <Marcador />
-                </Mapa>
-                <Footer />
-            </View>
-        );
-
+            <Routes />
+        )
     }
 
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1
-    },
-    map: {
-        width: Dimensions.get('screen').width,
-        height: Dimensions.get('screen').height
-    }
-});
